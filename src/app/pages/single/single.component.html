@@ -1,0 +1,19 @@
+ <div class="container text-center">
+    <div class="row">
+      <div class="col col-lg-4 p-2" *ngFor="let item of single ">
+<div class="card " style="width: 18rem; margin-top: 20px;;" >
+    <img src="{{item.img}}" class="card-img-top" alt="..." style="height: 300px; width: auto;">
+    <div class="card-body">
+        <h5 style="color: red;">₹ {{item.price}}</h5>
+      <p class="card-title">{{item.title}}</p>
+      <p class="card-title">{{item.description}}</p>
+      
+      <div *ngFor="let i of range(item.rating)" style="display: inline;">
+        <span class="fa fa-star"></span>
+      </div>
+<br>
+      <a class="btn btn-outline-dark" (click)="buyNow(item.id)">Buy Now</a>
+    </div>
+  </div>
+ 
+
