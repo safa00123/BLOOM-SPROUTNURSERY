@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "bloom-sprout": {
+      "hosting": {
+        "bloomandsproutnursery": [
+          "bloom-sprout"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "bloom-sprout"
+  }
+}
